@@ -32,3 +32,22 @@ social:
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
     url: 
+
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - bootstrap-sass
+  - font-awesome-sass
+  - jekyll-github-metadata
+
+repository: etaroza/landing-page-theme
+
+port: 4001
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+  - .gitignore
+  - README.md
