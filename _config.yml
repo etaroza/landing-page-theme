@@ -39,7 +39,6 @@ gems:
   - jekyll-github-metadata
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-sass-converter
 
 sass:
     sass_dir: _sass
