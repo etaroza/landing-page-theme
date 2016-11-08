@@ -31,4 +31,21 @@ social:
   - title: github
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
-    url: 
+    url: https://twitter.com/SBootstrap
+
+repository: etaroza/landing-page-theme
+
+gems:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-sass-converter
+
+sass:
+    sass_dir: _sass
+
+port: 4001
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
