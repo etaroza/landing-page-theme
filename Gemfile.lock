@@ -147,7 +147,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
-  font-awesome-sass
+  font-awesome-sass (= 4.7.0)
   github-pages
 
 RUBY VERSION

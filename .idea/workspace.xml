@@ -2,20 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d01db5e-8807-44d0-852b-c5856eef1dbc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/font-awesome/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/font-awesome/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/font-awesome/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/font-awesome/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/font-awesome/fontawesome-webfont.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_sass/_fa.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/landing-page-theme.iml" afterPath="$PROJECT_DIR$/.idea/landing-page-theme.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/_font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/font-awesome/_variables.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/font-awesome.scss" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_bordered-pulled.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_fixed-width.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_icons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_larger.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_list.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_list.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_rotated-flipped.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_stacked.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/_sass/font-awesome/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/js.html" afterPath="$PROJECT_DIR$/_includes/js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/screen.sass" afterPath="$PROJECT_DIR$/css/screen.sass" />
     </list>
     <ignored path="landing-page-theme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,13 +84,13 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="screen.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/screen.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -65,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="_core.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/font-awesome/_core.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,19 +126,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-09-23-services-3.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-09-23-services-3.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -162,11 +184,11 @@
         <option value="$PROJECT_DIR$/_sass/_mixin.sass" />
         <option value="$PROJECT_DIR$/_sass/_fa.scss" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/_sass/_font-awesome-sass-wrapper.scss" />
         <option value="$PROJECT_DIR$/_includes/js.html" />
         <option value="$PROJECT_DIR$/css/screen.sass" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -273,14 +295,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font-awesome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -303,20 +317,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing-page-theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing-page-theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font-awesome-4.1.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,8 +405,8 @@
       <recent name="$PROJECT_DIR$/_sass" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/_sass" />
+      <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -526,18 +526,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1478626612368</updated>
-      <workItem from="1478626613543" duration="3137000" />
+      <workItem from="1478626613543" duration="3495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3137000" />
+    <option name="totallyTimeSpent" value="3495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1400" height="779" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32959327" sideWeight="0.5029455" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -688,14 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/js.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -712,18 +704,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/screen.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/font-awesome/_core.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_font-awesome.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/screen.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>

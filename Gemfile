@@ -21,5 +21,5 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "bootstrap-sass"
-   gem "font-awesome-sass"
+   gem "font-awesome-sass", "4.7.0" # copy pasted into the project
 end
