@@ -1,8 +1,7 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+body {
+    // To compensate for the fixed navbar
+    padding-top: $navbar-height;
+}
 
 body,
 html {
@@ -10,51 +9,51 @@ html {
     height: 100%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
 .lead {
     font-size: 18px;
     font-weight: 400;
 }
 
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+h2 label {
+    font-weight: normal;
+}
+
+// Intro header stuff
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/superman.jpg) no-repeat center center;
     background-size: cover;
-}
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
+    padding: 6% 0;
 
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
+    .page-header {
+        text-align: center;
+        color: $text-on-dark-bg-color;
+        border-bottom: none;
+        position: relative;
+        padding-bottom: 0;
+        margin: 0;
+        h2 {
+            margin-bottom: 0;
+        }
+        h1, h2 {
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        }
+    }
 
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    #preview {
+        .lead {
+            color: $text-on-dark-bg-color;
+        }
+    }
 }
 
 @media(max-width:767px) {
@@ -156,11 +155,34 @@ h6 {
     }
 }
 
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+// Pipereader specific stuff
+/*
+#embedpreview {
+    padding: $grid-gutter-width / 2;
+    p:last-child {
+        margin-bottom: 0;
+    }
+    @include box-shadow(0px 0px 5px 1px $gray-lighter);
+}
+.intro-header {
+    #embedpreview {
+        background: $body-bg;
+        color: $text-color;
+    }
+}
+*/
+
+#preview .panel.inverse {
+    .panel-body {
+        color: #fff;
+        background: $gray-dark;
+    }
 }
 
-p.copyright {
-    margin: 15px 0 0;
+#embedcode {
+    font-weight: normal;
+    font-size: $font-size-small;
+    background-color: $gray-lighter;
+    //color: #fff;
 }
+

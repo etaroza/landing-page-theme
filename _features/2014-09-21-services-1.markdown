@@ -1,0 +1,29 @@
+---
+layout: default
+img: ipad.png
+category: Services
+title: Death to the Stock Photo:<br>Special Thanks
+description: |
+sitemap: false
+---
+For readers:
+Less taping and scrolling
+Control with the keyboard, new way of navigating than just a space, click, arrow
+Saves the preferences by footprint???
+Various plugins - rsvp, pace and track
+More you read - smarter you get (reference research)
+Skimming faster, save time
+
+For publishers:
+Give a powerful unobtrusive toy
+Possibility to hook to readers' attention after paragraph is over
+Customize
+Cross browser, graceful fail
+Crashes when Google crashes because it runs on Google App Engine
+Flexible customization
+API
+
+Criticisms:
+comprehension
+Spritz clone
+

@@ -2,7 +2,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <ul class="list-inline">
                     <li>
                         <a href="#home">Home</a>
@@ -16,14 +16,11 @@
                         <a href="#services">Services</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
                 </ul>
-                <p class="copyright text-muted small">{{ site.copyright }}</p>
+                <p class="copyright text-muted small">&copy; Pipereader {{ 'now' | date: "%Y" }}</p>
             </div>
-            <div class="col-md-4">
-                {{ site.credits }}
+            <div class="col-md-12">
+                This is a static website made with Jekyll. The theme is forked on Github and adapted - <a href="https://github.com/{{ site.repository }}">copy with pride.</a>
             </div>
         </div>
     </div>

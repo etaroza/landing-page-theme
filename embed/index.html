@@ -1,0 +1,145 @@
+---
+layout: default
+title: Customize, preview and embed your speed reading widget
+---
+<style>
+    .PIPEREADER--pipe .PIPEREADER--rsvp .PIPEREADER--handle {
+        /*color: green;*/
+    }
+    .PIPEREADER--pipe .PIPEREADER--rsvp.PIPEREADER--hover .PIPEREADER--handle {
+        /*color: yellow;*/
+    }
+
+    .PIPEREADER--pipe .PIPEREADER--rsvp .PIPEREADER--tube {
+        /*background: white;*/
+    }
+</style>
+<div class="container" id="top">
+    <h1 class="page-header">Customize, preview and embed your speed reading widget</h1>
+    <div class="row">
+        <div class="col-lg-4 col-sm-5">
+            <form class="panel panel-info">
+                <div class="panel-heading">
+                    <h2>Customize</h2>
+                </div>
+                <div class="form-group panel-body">
+                    <label for="publisherId">Publisher ID</label>
+                    <input class="form-control" type="text" name="publisherId" value="{{ site.url | remove:'http://' | remove:'https://' | split:'/' | first | split: ':' | first }}" id="publisherId">
+                    <small class="help-block">Use your site's domain name in case you don't have the <strong>publisher id</strong>. When the widget loads it will check the publisher id and turn on <a href="{{ '/' }}#pricing">the purchased features</a>.</small>
+
+                    <label for="pipereaderSpeed">Default speed</label>
+                    <div class="input-group">
+                        <input class="form-control" type="number" name="wordsPerMinute" id="pipereaderSpeed" placeholder="250" value="250">
+                        <span class="input-group-addon">wpm</span>
+                    </div>
+                    <small class="help-block">How many words per minute to start with by default. 200 is considered normal, 400 is already quite fast; of course, in the end it will depend on the reader.</small>
+
+                    <label for="pluginChooser">Plugin</label>
+                    <select class="form-control" name="plugin" id="pluginChooser">
+                        <option value="rsvp" selected>RSVP - rapid serial visual presentation</option>
+                        <option disabled>... more are coming soon ...</option>
+                    </select>
+                    <small class="help-block">Speed reading technique that the widget will use.</small>
+
+                    <!-- TODO: for the future, depends on themes available for the plugin -->
+                    <input type="hidden" name="theme" value="basic">
+
+                    <label for="widgetDisplayChooser">Widget handle display</label>
+                    <select class="form-control" name="handleDisplay" id="widgetDisplayChooser">
+                        <option value="always_first" selected>Always visible as a first symbol in the text block</option>
+                        <!--<option value="always+last">Always visible as a last symbol in a text block</option>-->
+                        <option value="hover_first">Appears when the mouse moves over the text block</option>
+                    </select>
+                    <small class="help-block">Control how the widget handle will be presented.</small>
+
+                    <label for="pipereaderSelector">HTML tag selector</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">CSS3</span>
+                        <input class="form-control" type="text" name="selector" id="pipereaderSelector" placeholder="p,article" value="p">
+                    </div>
+                    <small class="help-block">Use CSS3 (or jQuery) tag selector for the widget to hook to. This doesn't affect the preview.</small>
+
+                    <label for="mobileVisibilityChooser">Screen width limitation</label>
+                    <select class="form-control" name="minScreenWidth" id="mobileVisibilityChooser">
+                        <option value="100">Always on</option>
+                        <option value="480" selected>Minimum screen width 480px</option>
+                        <option value="768">Minimum screen width 768px</option>
+                        <option value="992">Minimum screen width 992px</option>
+                    </select>
+                    <small class="help-block">Adjust the screen size when to enable the widget. For small devices Pipereader might not be user friendly.</small>
+
+                    <a href="#bodystart" class="page-scroll btn btn-success hidden-xs hidden-sm pull-right">Jump to preview</a>
+
+                    <div class="clearfix"></div>
+
+                    <label><i class="glyphicon glyphicon-info-sign"></i> Additional customization</label>
+                    <small class="help-block">
+                        You can also apply custom styling to PIPEREADER--* css classes and interact via JavaScript API.
+                        The documentation for these is coming soon.</small>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-8 col-sm-7">
+            <div id="preview" >
+                <select class="form-control pull-right" style="width: auto" id="previewtheme">
+                    <option value="" selected>Black on white</option>
+                    <option value="inverse">White on black</option>
+                </select>
+                <h2>
+                    Preview <small>- click the handle</small> ⧃ <small>next to the text</small>
+                </h2>
+                <div class="panel panel-default">
+                    <!--<div class="panel-heading">-->
+                    <!--</div>-->
+                    <div class="panel-body">
+                        <p>
+                            Kaip sako patys grupės nariai: „Mūsų muzika eina išvien <img src="http://placehold.it/10x10"> su &nbsp;<strong>jausmu,</strong>&raquo; kuris veda link savojo lizdo – namų. Juose visada gera ir ramu. Mes tik padedam vieni kitiems keliauti per šitą skubėjimą, kuris lyg azartinis lošimas po truputį pasiglemžia gebėjimą išlikt žmogumi. Muzika padeda neužsimiršti ir judėti tikriau.“
+                        </p>
+                    </div>
+                    <!--<div class="panel-footer">-->
+                    <!--
+                    <h3>Styling and behavior</h3>
+                    -->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--<hr class="section-heading-spacer">-->
+            <!--<div class="clearfix"></div>-->
+
+            <h2>Embed <small><label for="embedcode">your generated snippet</label></small></h2>
+            <form class="form-group">
+                <textarea id="embedcode" name="embedcode" class="form-control" rows="10"></textarea>
+            </form>
+            <div class="lead">
+                You have several possibilities:
+            </div>
+            <ul>
+                <li>Create and publish a new tag on Google Tag Manager.</li>
+                <li>Send the generated snippet to your webmaster or a developer.</li>
+                <li>Add a block in your CMS and make sure it's visible on pages where you want the widget on.</li>
+            </ul>
+            <div class="lead">If something doesn't work:</div>
+            <ul>
+                <li>Make sure $pr isn't clashing with other JavaScript variables on your website.</li>
+                <li>Make sure the domain name (publisher id) is correct, embedding the snippet on websites with unrecognised publisher id will not work.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- TODO: who's using it -->
+
+</div>
+
+<!-- START: Pipereader embed snippet-->
+<script type='text/javascript'>
+    (function(i,s,o,g,r,a,m){i['Pipereader']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//localhost:8888/pr/pr.nocache.js','$pr');
+    $pr('create', 'any-publisher', window.location.hostname, 'default');
+    $pr('require', 'rsvp');
+    $pr('rsvp:set', 'widget', 'simple');
+    $pr('set', 'selector', '#preview p');
+    $pr('set', 'wordsPerMinute', '260');
+</script>
+<!--END: Pipereader embed snippet-->

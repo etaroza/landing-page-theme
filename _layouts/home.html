@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+		{% include nav.html %}
+
+		<section id="home">
+			<!-- Header -->
+			<div class="intro-header">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+							<h1 class="hidden-xs hidden-sm">{{ page.h1 }}</h1>
+							<h2>{{ page.h2 }}</h2>
+							<hr class="form-group col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10"/>
+							<div class="clearfix"></div>
+							<a class="btn btn-primary" href="{{ 'embed' | relative_url }}"><i class="fa fa-code"></i> Go get yours!</a>
+						</div>
+						<br class="form-group col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-11 col-xs-11"/>
+						<div id="preview" >
+							<div class="col-lg-8 col-lg-offset-2 col-md-offset-2 col-md-8">
+								<div class="panel panel-default center-block">
+									<div class="panel-heading">
+										<h3>Here's how it looks like in action<br><small>The widget is merely an icon</small> ⧃ <small>next to a paragraph - click it.</small></h3>
+									</div>
+									<div class="panel-body">
+										⧃ Kaip sako patys grupės nariai: „Mūsų muzika eina išvien su jausmu, kuris veda link savojo lizdo – namų. Juose visada gera ir ramu. Mes tik padedam vieni kitiems keliauti per šitą skubėjimą, kuris lyg azartinis lošimas po truputį pasiglemžia gebėjimą išlikt žmogumi. Muzika padeda neužsimiršti ir judėti tikriau.“
+									</div>
+									<div class="panel-footer">
+										<div class="pull-right">
+											<mark>It's constantly improving fuelled by your ideas.</mark> <a class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-bullhorn" aria-hidden="true"></i> Send feedback</a>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.intro-header -->
+		</section>
+
+		<section id="features">
+			<!-- Page Content -->
+			{% for post in site.features reversed %}
+			{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+			{% if thecycle == 'odd' %}
+			<div class="content-section-a">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-5 col-sm-6">
+							<hr class="section-heading-spacer">
+							<div class="clearfix"></div>
+							<h2 class="section-heading">{{ post.title }}</h2>
+							<div class="lead">{{ post.content }}</div>
+						</div>
+						<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+							<img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+						</div>
+					</div>
+
+				</div>
+				<!-- /.container -->
+
+			</div>
+			<!-- /.content-section-a -->
+			{% else %}
+
+			<div class="content-section-b">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+							<hr class="section-heading-spacer">
+							<div class="clearfix"></div>
+							<h2 class="section-heading">{{ post.title }}</h2>
+							<div class="lead">{{ post.content }}</div>
+						</div>
+						<div class="col-lg-5 col-sm-pull-6  col-sm-6">
+							<img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+						</div>
+					</div>
+
+				</div>
+				<!-- /.container -->
+
+			</div>
+			<!-- /.content-section-b -->
+			{% endif %}
+			{% endfor %}
+		</section>
+
+		{% include contact.html %}
+		{% include footer.html %}
+		{% include js.html %}
+	</body>
+</html>

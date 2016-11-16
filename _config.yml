@@ -2,16 +2,30 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
+destination:  ./docs
+
+gems:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  # unsupported by Github Pages
+  # TODO: use jekyll-assets, because we will serve generated /docs folder anyway
+
+repository: etaroza/landing-page-theme
+
+port: 4001
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+name: Pipereader
+slogan: Speed reading widget for websites
+title: Pipereader - speed reading widget for websites
+email: hilde@pipereader.com
+author: Hilde Graf
 description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+  Almost invisible yet powerful speed reading widget for content driven websites, blogs, documentation.
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -20,6 +34,11 @@ credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme cr
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  features:
+    output: true
+
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -32,19 +51,3 @@ social:
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
     url: https://twitter.com/SBootstrap
-
-repository: etaroza/landing-page-theme
-
-gems:
-  - jekyll-github-metadata
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-sass:
-    sass_dir: _sass
-
-port: 4001
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
