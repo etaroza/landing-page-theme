@@ -1,0 +1,59 @@
+<!-- START: Pipereader embed snippet-->
+<script type='text/javascript'>
+    // TODO: parametrize the url according to the deployed environment
+//    var jsUrl = '//localhost:8888/pr/pr.nocache.js';
+//    var jsUrl = '//localhost:8080/pr/pr.nocache.js';
+    var jsUrl = '//pipereader.appspot.com/pr/pr.nocache.js';
+
+    (function(i,s,o,g,r,a,m){i['Pipereader']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script', jsUrl,'$pr');
+
+    function collectParameters(isForEmbedding) {
+        var $configuration = jQuery("#configuration");
+        if($configuration.length != 1) {
+            return getDefaultParameters(isForEmbedding);
+        } else {
+            var params = [];
+            var publisherId = jQuery("input[name=publisherId]").val();
+            if(publisherId == "") {
+                return [];
+            } else {
+                // crete (pipereader)
+                params.push(["create", (isForEmbedding ? publisherId : "any-publisher"), "auto", "default"]);
+
+                // require (plugin)
+                params.push(["require", jQuery("select[name=plugin]").val()]);
+
+                // selector
+                var selector = jQuery("input[name=selector]").val();
+                if(selector == "") {
+                    selector = "p";
+                }
+                params.push(["set", "selector", (isForEmbedding ? selector : "#preview p")]);
+
+                // wordsPerMinute
+                var wordsPerMinute = jQuery("input[name=wordsPerMinute]").val();
+                if(wordsPerMinute == "") {
+                    wordsPerMinute = 250;
+                }
+                params.push(["set", "wordsPerMinute", wordsPerMinute]);
+
+                // handleDisplay
+                var handleDisplay = jQuery("select[name=handleDisplay]").val();
+                params.push(["default.rsvp:set", "handleDisplay", handleDisplay]);
+            }
+        }
+
+        return params;
+    }
+
+    function getDefaultParameters(isForEmbedding) {
+        var params = [];
+        params.push(["create", "any-publisher", "auto", "default"]);
+        params.push(["require", "rsvp"]);
+        params.push(["set", "selector", (isForEmbedding ? "p" : "#preview p")]);
+        params.push(["set", "wordsPerMinute", (isForEmbedding ? "250" : "260")]);
+        params.push(["default.rsvp:set", "handleDisplay", "first_always"]);
+        return params;
+    }
+</script>
+<!--END: Pipereader embed snippet-->

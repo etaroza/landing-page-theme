@@ -13,15 +13,18 @@ Saves the preferences by footprint???
 Various plugins - rsvp, pace and track
 More you read - smarter you get (reference research)
 Skimming faster, save time
+Use it or ignore it
 
 For publishers:
 Give a powerful unobtrusive toy
 Possibility to hook to readers' attention after paragraph is over
 Customize
-Cross browser, graceful fail
+Cross browser, graceful fail when not supported - won't distort the website
 Crashes when Google crashes because it runs on Google App Engine
 Flexible customization
 API
+Upgrades and new features automatically
+Asynchronous loading of the script won't block the browser
 
 Criticisms:
 comprehension

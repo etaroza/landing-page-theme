@@ -29,3 +29,21 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+jQuery(function($){
+    var pipereaderAddParameters = function() {
+        var params = collectParameters();
+        $.each(params, function(index, value){
+            //console.log(value[0] +" "+ value[1] +" "+ value[2] +" "+ value[3] +" "+ value[4]);
+            $pr(value[0], value[1], value[2], value[3], value[4]);
+        });
+    };
+
+    pipereaderAddParameters();
+
+    $("select,input", "#configuration").change(function(){
+        $pr.api.remove("default");
+        pipereaderAddParameters();
+        $pr.api.activate("default");
+    });
+});
